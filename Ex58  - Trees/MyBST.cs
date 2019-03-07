@@ -44,7 +44,6 @@ namespace Ex58____Trees
                 }
             }
         }
-
         public void Insert(T item)
         {
             if (root == null)
@@ -86,6 +85,17 @@ namespace Ex58____Trees
                 PreOrderHelper(root.LeftChild, list);
                 PreOrderHelper(root.RightChild, list);
             }
+        }
+
+        public List<T> PostOrderTrav()
+        {
+            List<T> postorder = new List<T>();
+            PostOrderHelper(root, postorder);
+            return postorder;
+        }
+        private void PostOrderHelper(Node root, List<T> list)
+        {
+
         }
     }
 }

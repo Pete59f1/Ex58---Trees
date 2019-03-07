@@ -45,5 +45,22 @@ namespace Test
                 Assert.AreEqual(my.PreOrderTrav()[i], preorder[i]);
             }
         }
+        [TestMethod]
+        public void TestPostOrderTrav()
+        {
+            int[] data = { 47, 22, 68, 9, 33, 53, 88, 5, 17, 29, 46, 48 };
+            MyBST<int> my = new MyBST<int>();
+            foreach (int item in data)
+            {
+                my.Insert(item);
+            }
+
+            List<int> postorder = new List<int>() { 22, 9, 5, 17, 33, 29, 16, 68, 53, 48, 88, 47 };
+
+            for (int i = 0; i < postorder.Count; i++)
+            {
+                Assert.AreEqual(my.PostOrderTrav()[i], postorder[i]);
+            }
+        }
     }
 }
