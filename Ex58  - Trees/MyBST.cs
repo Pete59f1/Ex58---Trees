@@ -70,5 +70,17 @@ namespace Ex58____Trees
 
             return list;
         }
+
+        public List<T> PreOrderTrav()
+        {
+            List<T> preorder = new List<T>();
+            PreOrderHelper(root, preorder);
+            return preorder;
+        }
+        private void PreOrderHelper(Node root, List<T> list)
+        {
+            //Check selv, venstre, højre, en op REGLEN!!!!!
+
+        }
     }
 }
