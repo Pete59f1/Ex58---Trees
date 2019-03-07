@@ -31,8 +31,8 @@ namespace Test
         [TestMethod]
         public void TestPreOrderTrav()
         {
-            MyBST<int> my = new MyBST<int>();
             int[] data = { 47, 22, 68, 9, 33, 53, 88, 5, 17, 29, 46, 48 };
+            MyBST<int> my = new MyBST<int>();
             foreach (int item in data)
             {
                 my.Insert(item);

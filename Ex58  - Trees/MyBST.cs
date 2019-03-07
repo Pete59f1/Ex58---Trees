@@ -80,7 +80,12 @@ namespace Ex58____Trees
         private void PreOrderHelper(Node root, List<T> list)
         {
             //Check selv, venstre, højre, en op REGLEN!!!!!
-
+            if (root != null)
+            {
+                list.Add(root.Data);
+                PreOrderHelper(root.LeftChild, list);
+                PreOrderHelper(root.RightChild, list);
+            }
         }
     }
 }
