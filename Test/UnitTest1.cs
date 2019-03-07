@@ -55,7 +55,7 @@ namespace Test
                 my.Insert(item);
             }
 
-            List<int> postorder = new List<int>() { 22, 9, 5, 17, 33, 29, 16, 68, 53, 48, 88, 47 };
+            List<int> postorder = new List<int>() { 5, 17, 9, 29, 46, 33, 22, 48, 53, 88, 68, 47 };
 
             for (int i = 0; i < postorder.Count; i++)
             {

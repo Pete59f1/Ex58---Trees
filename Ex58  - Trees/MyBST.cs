@@ -95,7 +95,12 @@ namespace Ex58____Trees
         }
         private void PostOrderHelper(Node root, List<T> list)
         {
-
+            if (root != null)
+            {
+                PostOrderHelper(root.LeftChild, list);
+                PostOrderHelper(root.RightChild, list);
+                list.Add(root.Data);
+            }
         }
     }
 }
